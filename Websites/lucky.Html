@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky Number Generator</title>
+</head>
+<body align="center">
+
+<h1>🍀 Lucky Number Generator</h1>
+
+<button onclick="lucky()">Generate Lucky Number</button>
+
+<h2 id="result"></h2>
+<h3 id="message"></h3>
+
+<script>
+
+function lucky()
+{
+    let num = Math.floor(Math.random() * 100) + 1;
+
+    document.getElementById("result").innerHTML = "Your Lucky Number is: " + num;
+
+    if(num >= 90)
+        document.getElementById("message").innerHTML = "🎉 Excellent! Today is your lucky day.";
+    else if(num >= 70)
+        document.getElementById("message").innerHTML = "😊 Good luck!";
+    else if(num >= 50)
+        document.getElementById("message").innerHTML = "⭐ Keep smiling!";
+    else
+        document.getElementById("message").innerHTML = "💪 Believe in yourself!";
+}
+
+</script>
+<body style="background-image: url('https://img.magnific.com/premium-photo/golden-horseshoe-clover-shamrocks-green-hat-green-background-st-patricks-day_508037-704.jpg?semt=ais_hybrid&w=740&q=80'); background-size: cover;">
+
+</body>
+</html> 
